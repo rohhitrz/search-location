@@ -43,6 +43,24 @@ export default function LocationSelector () {
     }
  }
 
+ const handleCountryChange=(e)=>{
+    setSelectedCountry(e.target.value);
+    setSelectedState("");
+    setSelectedCity("");
+    setCities([]);
+    setState([]);
+
+ }
+
+ const handleStateChange=(e)=>{
+    setSelectedState(e.target.value);
+    setSelectedCity("");
+    setCities([]);
+ }
+ const handleCityChange=(e)=>{
+    setSelectedCity(e.target.value);
+ }
+
 
 
 
